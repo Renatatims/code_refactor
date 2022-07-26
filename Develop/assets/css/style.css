@@ -4,10 +4,19 @@
     margin: 0;
 }
 
-/*body*/
+/*body - added "a" and "p" which are general attributes in the body section*/
 
 body {
     background-color: #d9dcd6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
 }
 
 
@@ -29,7 +38,9 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+/*Top-Navigation - class name added: "navigation"*/
+
+.navigation {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -37,22 +48,18 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.navigation ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.navigation ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
+.navigation ul li:hover{
+    background-color:#0072bb;
+    text-decoration: underline;
 }
 
 /*Figure*/
@@ -65,8 +72,15 @@ p {
     background-size: cover;
     background-position: center;
 }
+/*Section class="content" */
 
-/*Image*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Section - Images*/
 
 .float-left {
     float: left;
@@ -78,15 +92,7 @@ p {
     margin-left: 25px;
 }
 
-/*Section*/
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/*Articles* the order of the classes was changed so the CSS is more organized and acessible.
+/*Section - Articles * - the order of the classes was changed so the CSS is more organized and acessible.
 The classes were grouped according to their article's name:*/
 
 
