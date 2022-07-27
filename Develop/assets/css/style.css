@@ -83,18 +83,6 @@ p {
     margin-left: 20px;
 }
 
-/*Section - Images*/
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 /*Articles - "Search Engine Optimization", "Online Reputation Management", "Social Media Marketing" 
 since all these articles have the same properties, a class="article" was created so there is less repetition in the CSS file.*/
 
@@ -109,6 +97,16 @@ since all these articles have the same properties, a class="article" was created
 
 .article img {
     max-height: 200px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
 
 .article h2 {
@@ -161,3 +159,40 @@ since they have the same properties*/
 .footer h2 {
     font-size: 20px;
 }
+
+/*@media - included @media so the website gets resized correctly on smaller screens*/
+
+@media screen and (max-width:992px){ 
+    header{
+        position:absolute;
+    }
+
+    .content{
+        
+        position:absolute;
+        height: 100px;
+
+    }
+
+    .figure{
+        position:absolute;
+    }
+    
+    .benefits {
+        display:inline-flex;
+        position: relative;
+        top:1000px;
+        float:none;
+        width: 100%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #2589bd;
+    }
+
+    .footer {
+        display: inline-flex;
+        top:1100px;
+        position:relative;
+    }
+}
+
