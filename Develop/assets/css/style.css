@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-/*body - added "a" and "p" which are general attributes in the body section*/
+/*body*/
 
 body {
     background-color: #d9dcd6;
@@ -38,7 +38,7 @@ p {
     color: #d9dcd6;
 }
 
-/*Top-Navigation - class name added: "navigation"*/
+/*Top-Navigation - class name: "navigation"*/
 
 .navigation {
     padding-top: 15px;
@@ -64,6 +64,9 @@ p {
     text-decoration: underline;
 }
 
+/*end of Top-Navigation*/
+
+
 /*Figure*/
 
 .hero {
@@ -75,6 +78,9 @@ p {
     background-position: center;
 }
 
+/*end of Figure*/
+
+
 /*Section class="content" */
 
 .content {
@@ -83,8 +89,8 @@ p {
     margin-left: 20px;
 }
 
-/*Articles - "Search Engine Optimization", "Online Reputation Management", "Social Media Marketing" 
-since all these articles have the same properties, a class="article" was created so there is less repetition in the CSS file.*/
+/*Articles*/ 
+/*class="article" - "Search Engine Optimization", "Online Reputation Management", "Social Media Marketing"*/
 
 .article {
     margin-bottom: 20px;
@@ -114,6 +120,8 @@ since all these articles have the same properties, a class="article" was created
     font-size: 36px;
 }
 
+/*end of Articles*/
+
 /*Aside*/
 
 .benefits {
@@ -127,8 +135,7 @@ since all these articles have the same properties, a class="article" was created
     background-color: #2589bd;
 }
 
-/*Div - "Lead Generation", "Brand Awareness", "Cost Management" all 3 under the same class="benefits-content", 
-since they have the same properties*/
+/*Div class="benefits-content" - "Lead Generation", "Brand Awareness", "Cost Management" */
 
 .benefits-content {
     margin-bottom: 32px;
@@ -160,40 +167,62 @@ since they have the same properties*/
     font-size: 20px;
 }
 
-/*@media - included @media so the website gets resized correctly on smaller screens*/
+/*@media - resizing in small screens*/
 
-@media screen and (max-width:992px){ 
+@media screen and (max-width:1024px){ 
+
+    /*header*/
     header{
-        position:absolute;
+        position:relative;
     }
 
-    /*width 100% - in a smaller screen the position of content will adjust*/
+    /*navigation*/
+    .navigation {
+        position:relative;
+        float:none;
+       
+    }
+
+    .navigation ul li {
+        display: block;
+        position:relative;
+        margin-left: 0px;
+    }
+
+
+    /*figure*/
+    .hero {
+        position:relative;
+        height: 500px;
+        width: 100%;
+       
+    }
     
+    /*Section*/
     .content{
         position: relative;
-        width: 100%;   
+        width: 95%;   
 
     }
 
-    
+    /*Articles*/
+
     .article{
         position:relative;
         
     }
-
     .article h2 {
         font-size: 20px;
-        
     }
 
-/*fixed the images when resizing the screen*/
     .article img {
         max-height: 180px;
         position: relative;
         
     }
 
-      
+    /*Aside*/
+
     .benefits {
         display:inline-flex;
         position: relative;
@@ -201,7 +230,7 @@ since they have the same properties*/
         width: 100%; 
     }
 
-    /*added margin so the benefits content is visualy organized*/
+    
 
     .benefits-content{
         margin-left: 15px;
@@ -209,8 +238,77 @@ since they have the same properties*/
                 
     }
 
+    /*Footer*/
+
     .footer {
         position:relative;
     }
+}
+
+
+@media screen and (max-width:576px){
+
+    /*header*/
+   
+    header{
+        position:relative;
+        
+    }
+
+    /*navigation*/
+    
+    .navigation ul li {
+        position: block; 
+        float:none;
+        margin-left: 0 px;
+        font-size: 15px;
+    }
+
+    /*figure*/
+
+    .hero {
+        height: 200px;
+          
+    }
+
+    /*Section*/
+
+    .content{
+        width: 90%; 
+    }
+
+    /*Article*/
+
+
+    .article {
+        padding: 10px;
+        height: 300px;
+               
+    }
+
+    .article h2 {
+        font-size: 16px;
+        padding-bottom: 35px;
+    }
+
+    .article img {
+        max-height: 90px;
+                
+    }
+
+    .article p{
+        font-size:16px;
+    }
+
+    /*Aside*/
+
+    .benefits {
+        display:block;
+        position: relative;
+        float:none;
+        width: 100%; 
+        
+    }
+
 }
 
