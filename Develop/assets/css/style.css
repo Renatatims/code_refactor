@@ -60,7 +60,6 @@ p {
 /*a hover was added to help with navigation*/
 
 .navigation ul li:hover{
-    background-color:#0072bb;
     text-decoration: underline;
 }
 
@@ -169,7 +168,7 @@ p {
 
 /*@media - resizing in small screens*/
 
-@media screen and (max-width:1024px){ 
+@media screen and (max-width:1034px){ 
 
     /*header*/
     header{
