@@ -167,31 +167,49 @@ since they have the same properties*/
         position:absolute;
     }
 
-    .content{
-        
-        position:absolute;
-        height: 100px;
-
-    }
-
-    .figure{
-        position:absolute;
-    }
+    /*width 100% - in a smaller screen the position of content will adjust*/
     
+    .content{
+        position: relative;
+        width: 100%;   
+
+    }
+
+    
+    .article{
+        position:relative;
+        
+    }
+
+    .article h2 {
+        font-size: 20px;
+        
+    }
+
+/*fixed the images when resizing the screen*/
+    .article img {
+        max-height: 180px;
+        position: relative;
+        
+    }
+
+      
     .benefits {
         display:inline-flex;
         position: relative;
-        top:1000px;
         float:none;
-        width: 100%;
-        height: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #2589bd;
+        width: 100%; 
+    }
+
+    /*added margin so the benefits content is visualy organized*/
+
+    .benefits-content{
+        margin-left: 15px;
+        margin-right: 15px;
+                
     }
 
     .footer {
-        display: inline-flex;
-        top:1100px;
         position:relative;
     }
 }
