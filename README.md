@@ -7,77 +7,93 @@ This repository contains a project to improve accessibility standards from a web
 ## Objectives
 1. Modify the actual coding in order to become more acessible when using assistive technologies.
 2. To follow a logical structure and cleaner appearance
+3. Resize correctly on every screen
+
 
 ## In order to do this, it was applied the following:
 
-1. Title element was previously generic and it was changed to a descriptive title, under the company's name. 
+## Html
+
+1. Title element was previously generic ("website") and it was changed to a descriptive title, under the company's name. 
+
+![Screenshot1](./Develop/assets/screenshots/capture1.PNG "favicon")
 
 2. A favicon was added to assist with browser tab navigation.
 
-![Screenshot](assets/screenshots/capture1.PNG) "favicon")
-
-3. Included "viewport" in the head-section, to enable the page to follow screen-width of the device being used.
+3. "Viewport" was included in the head-section, to enable the page to follow screen-width of the device being used.
 
 ````html
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 ````
+4. Key-words were included to help with the website's ranking in search engines:
+
+````html
+<meta name="Horiseon" content="Search Engine Optimization">
+````
+
+5. Html structure semantically upgrated with: Body, Header, Navigation, Section, Article, Aside and Footer.
+
+![Screenshot2](./Develop/assets/screenshots/capture2.PNG "html structure")
+
+6. Included Alt attributes to every single image
+
+![Screenshot3](./Develop/assets/screenshots/capture3.PNG "lead generation icon")
+
+````html
+<img src="./assets/images/lead-generation.png" alt="lead generation funnel icon">
+````
+
+7. General classes were created, so elements that had the same attributes and properties could be grouped.
+
+8. Link reference to the Home page from the logo:
+
+````html
+<a href="#home"> Hori<span class="seo">seo</span>n</a>
+````
+
+
+## CSS
+
+1. Organized the CSS stylesheet following html's semantic order. Comments were also added to show where each element began and ended.
+
+2. Repetition was eliminated by grouping the elements with the same attributes and properties under the same class name.
+
+- class="article" - represents the following: "Search Engine Optimization", "Online Reputation Management", "Social Media Marketing" 
+
+- class = "benefits-content" - represents the following elements: "Lead Generation", "Brand Awareness" and "Cost Management".
+
+3. A hover attribute was included in the navigation menu to improve acessibility:
+
+![Screenshot5](./Develop/assets/screenshots/Gif_hover.gif "Navigation hover")
+
+
+4. @media - was included so the website get resized correctly on smaller screens. There are 2 different set-ups for tablets and mobile (max 576px).
+
+- Position relative applied on the elements.
+- Navigation: float was changed to none in smaller screens, so it becomes acessible.
+- Aside bar: float changed from right to none, so it can be visualized at the bottom in smaller screens without breaking. Also margin was added so it became organized and width changed to 100% so the content's position will adjust.
+- Images: height adjusted so it could fit on a smaller screen.
+
+## Usage
+
+With this project, the website code became cleanner, more organized, accessible and easier for search engines to find the website.
+It was also adjusted to smaller screens, so this improves acessibility and user's experience.
+
+
+## Link to application: 
+https://github.com/Renatatims/code_refactor
+
+## Sources:
+
+ - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+ - https://www.w3schools.com/cssref/sel_hover.asp
+
+ - https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+ 
+- http://html5doctor.com/the-section-element/
 
 
 
-2. <title>Horiseon Social Solution Services </title> <!--Changed title, from "website" to "Horiseon Social Solution Services"-->
 
-3. <!--Added a favicon-->
-
-4.<!--switched "div" to "header" -->
-
-5.  <nav class="navigation"> Navigation: <!--changed "div" to "nav" and added a class name to nav, so it can be easily found-->
-
-6.<section class="content">  <!--changed "div" to "section"-->
-
-7. <article class="article"><!--changed "div" to "article"--> <!--changed class name to "article"-->
-
-8.<aside class="benefits"> <!--changed "div" to "aside"-->
-
-9.  <!--Footer-->
-    <footer class="footer"> 
-
-
-CSS
-
-10. /*body - added "a" and "p" which are general attributes in the body section*/
-
-11. /*Top-Navigation - class name added: "navigation"*/
-
-12./*Articles - "Search Engine Optimization", "Online Reputation Management", "Social Media Marketing" 
-since all these articles have the same properties, a class="article" was created so there is less repetition in the CSS file.*/
-
-13. /*Div - "Lead Generation", "Brand Awareness", "Cost Management" all 3 under the same class="benefits-content", 
-since they have the same properties*/
-
-14. /*@media - included @media so the website gets resized correctly on smaller screens*/
-
-15. /*position:relative on header*/
-
-16. /*position:relative on navigation - float changed to none in smaller screens*/
-
-17./*navigation ul li - display changed to block and position to relative in a smaller screen*/
-
-18. /*width 100% - in a smaller screen the position of content will adjust*/
-
-19. 
-.article img {
-        max-height: 180px;
-        position: relative;
-        
-    }
-
-/*fixed the images when resizing the screen*/
-
-20. /*added margin so the benefits content is visualy organized*/
-
-21. /*added @media screen for 576px - so content adjusts properly on cellphones*/
-
-22. Alt elements
-
-23. Link reference to the Home page from the logo
