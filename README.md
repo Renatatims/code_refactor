@@ -56,3 +56,7 @@ since they have the same properties*/
 20. /*added margin so the benefits content is visualy organized*/
 
 21. /*added @media screen for 576px - so content adjusts properly on cellphones*/
+
+22. Alt elements
+
+23. Link reference to the Home page from the logo
