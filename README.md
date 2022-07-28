@@ -1,8 +1,29 @@
-# code_refactor
+# Code Refactor Project
 Code refactoring - web accessibility and codebase improvement
 
+## Description 
+This repository contains a project to improve accessibility standards from a website.
 
-1.<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--scale the website so it can be read at any device and size-->
+## Objectives
+1. Modify the actual coding in order to become more acessible when using assistive technologies.
+2. To follow a logical structure and cleaner appearance
+
+## In order to do this, it was applied the following:
+
+1. Title element was previously generic and it was changed to a descriptive title, under the company's name. 
+
+2. A favicon was added to assist with browser tab navigation.
+
+![Screenshot](assets/screenshots/capture1.PNG) "favicon")
+
+3. Included "viewport" in the head-section, to enable the page to follow screen-width of the device being used.
+
+````html
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+````
+
+
 
 2. <title>Horiseon Social Solution Services </title> <!--Changed title, from "website" to "Horiseon Social Solution Services"-->
 
