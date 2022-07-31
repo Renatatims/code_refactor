@@ -36,7 +36,7 @@ This repository contains a project to improve accessibility standards from a web
 
 ![Screenshot2](./Develop/assets/screenshots/capture2.PNG "html structure")
 
-6. Included Alt attributes to every single image
+6. Included Alt attributes to every single image and icons:
 
 ![Screenshot3](./Develop/assets/screenshots/capture3.PNG "lead generation icon")
 
@@ -70,14 +70,14 @@ This repository contains a project to improve accessibility standards from a web
 
 4. @media - was included so the website get resized correctly on smaller screens. There are 2 different set-ups for tablets and mobile (max 576px).
 
-- Position relative applied on the elements.
+- Position relative applied to the elements.
 - Navigation: float was changed to none in smaller screens, so it becomes acessible.
 - Aside bar: float changed from right to none, so it can be visualized at the bottom in smaller screens without breaking. Also margin was added so it became organized and width changed to 100% so the content's position will adjust.
 - Images: height adjusted so it could fit on a smaller screen.
 
 ## Usage
 
-With this project, the website code became cleanner, more organized, accessible and easier for search engines to find the website.
+With this project, the website code became cleanner, more organized, accessible and easier for search engines to find the website. 
 It was also adjusted to smaller screens, so this improves acessibility and user's experience.
 
 
