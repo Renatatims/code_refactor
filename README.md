@@ -2,7 +2,7 @@
 Code refactoring - web accessibility and codebase improvement
 
 ## Description 
-This repository contains a project to improve accessibility standards from a website.
+This repository contains a project to improve accessibility standards for Horiseon Social Solution Services Inc. website.
 
 ## Objectives
 1. Modify the actual coding in order to become more acessible when using assistive technologies.
@@ -32,7 +32,7 @@ This repository contains a project to improve accessibility standards from a web
 <meta name="Horiseon" content="Search Engine Optimization">
 ````
 
-5. Html structure semantically upgrated with: Body, Header, Navigation, Section, Article, Aside and Footer.
+5. Html structure semantically upgrated with: Body, Header, Navigation, Main, Section, Article, Aside and Footer.
 
 ![Screenshot2](./Develop/assets/screenshots/capture2.PNG "html structure")
 
@@ -68,17 +68,20 @@ This repository contains a project to improve accessibility standards from a web
 ![Screenshot5](./Develop/assets/screenshots/Gif_hover.gif "Navigation hover")
 
 
-4. @media - was included so the website get resized correctly on smaller screens. There are 2 different set-ups for tablets and mobile (max 576px).
+4. @media - was included so the website gets resized correctly on smaller screens. There are different set-ups for tablets and mobile.
 
 - Position relative applied to the elements.
 - Navigation: float was changed to none in smaller screens, so it becomes acessible.
 - Aside bar: float changed from right to none, so it can be visualized at the bottom in smaller screens without breaking. Also margin was added so it became organized and width changed to 100% so the content's position will adjust.
-- Images: height adjusted so it could fit on a smaller screen.
+- Images: height adjusted so it could fit on a smaller screens.
 
 ## Usage
 
-With this project, the website code became cleanner, more organized, accessible and easier for search engines to find the website. 
-It was also adjusted to smaller screens, so this improves acessibility and user's experience.
+With this project, the website code became cleanner, organized, accessible and easier for search engines to find the website. 
+
+The semantic elements applied to the Html document and the "alt" attributes included on every single image and icon, increased acessibility, once screen readers are now able to read the descriptive content.
+
+The website was also adjusted to smaller screens, using CSS @media rules, which improves acessibility and user's experience.
 
 
 ## Link to application: 
