@@ -5,7 +5,7 @@ Code refactoring - web accessibility and codebase improvement
 This repository contains a project to improve accessibility standards for Horiseon Social Solution Services Inc. website.
 
 ## Objectives
-1. Modify the actual coding in order to become more acessible when using assistive technologies.
+1. Modify the actual coding in order to become more accessible when using assistive technologies.
 2. To follow a logical structure and cleaner appearance
 3. Resize correctly on every screen
 
@@ -32,7 +32,7 @@ This repository contains a project to improve accessibility standards for Horise
 <meta name="Horiseon" content="Search Engine Optimization">
 ````
 
-5. Html structure semantically upgrated with: Body, Header, Navigation, Main, Section, Article, Aside and Footer.
+5. Html structure semantically upgraded with: Body, Header, Navigation, Main, Section, Article, Aside and Footer.
 
 ![Screenshot2](assets/screenshots/capture2.PNG "html structure")
 
@@ -63,25 +63,33 @@ This repository contains a project to improve accessibility standards for Horise
 
 - class = "benefits-content" - represents the following elements: "Lead Generation", "Brand Awareness" and "Cost Management".
 
-3. A hover attribute was included in the navigation menu to improve acessibility:
+3. A hover attribute was included in the navigation menu to improve accessibility:
 
 ![Screenshot5](assets/screenshots/Gif_hover.gif "Navigation hover")
 
 
 4. @media - was included so the website gets resized correctly on smaller screens. There are different set-ups for tablets and mobile.
 
-- Position relative applied to the elements.
-- Navigation: float was changed to none in smaller screens, so it becomes acessible.
+- Position "relative" applied to the elements.
+- Navigation: float was changed to none in smaller screens, so it becomes accessible.
 - Aside bar: float changed from right to none, so it can be visualized at the bottom in smaller screens without breaking. Also margin was added so it became organized and width changed to 100% so the content's position will adjust.
-- Images: height adjusted so it could fit on a smaller screens.
+- Images: height adjusted so it could fit on smaller screens.
+
+5. A CSS variable for the font color was created, to help with organization and future adjustments.
+
+````css
+:root {
+    --font:#ffffff;
+}
+````
 
 ## Usage
 
-With this project, the website code became cleanner, organized, accessible and easier for search engines to find the website. 
+With this project, the website code became cleaner, organized, accessible and easier for search engines to find the website. 
 
-The semantic elements applied to the Html document and the "alt" attributes included on every single image and icon, increased acessibility, once screen readers are now able to read the descriptive content.
+The semantic elements applied to the Html document and the "alt" attributes included on every single image and icon, increased accessibility, once screen readers are now able to read the descriptive content.
 
-The website was also adjusted to smaller screens, using CSS @media rules, which improves acessibility and user's experience.
+The website was also adjusted to smaller screens, using CSS @media rules, which improves accessibility and user's experience.
 
 
 ## Link to application: 
@@ -95,7 +103,7 @@ https://github.com/Renatatims/code_refactor
 
  - https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
  
-- http://html5doctor.com/the-section-element/
+ - http://html5doctor.com/the-section-element/
 
 
 
