@@ -16,7 +16,7 @@ This repository contains a project to improve accessibility standards for Horise
 
 1. Title element was previously generic ("website") and it was changed to a descriptive title, under the company's name. 
 
-![Screenshot1](./Develop/assets/screenshots/capture1.PNG "favicon")
+![Screenshot1](assets/screenshots/capture1.PNG "favicon")
 
 2. A favicon was added to assist with browser tab navigation.
 
@@ -34,11 +34,11 @@ This repository contains a project to improve accessibility standards for Horise
 
 5. Html structure semantically upgrated with: Body, Header, Navigation, Main, Section, Article, Aside and Footer.
 
-![Screenshot2](./Develop/assets/screenshots/capture2.PNG "html structure")
+![Screenshot2](assets/screenshots/capture2.PNG "html structure")
 
 6. Included Alt attributes to every single image and icons:
 
-![Screenshot3](./Develop/assets/screenshots/capture3.PNG "lead generation icon")
+![Screenshot3](assets/screenshots/capture3.PNG "lead generation icon")
 
 ````html
 <img src="./assets/images/lead-generation.png" alt="lead generation funnel icon">
@@ -65,7 +65,7 @@ This repository contains a project to improve accessibility standards for Horise
 
 3. A hover attribute was included in the navigation menu to improve acessibility:
 
-![Screenshot5](./Develop/assets/screenshots/Gif_hover.gif "Navigation hover")
+![Screenshot5](assets/screenshots/Gif_hover.gif "Navigation hover")
 
 
 4. @media - was included so the website gets resized correctly on smaller screens. There are different set-ups for tablets and mobile.
