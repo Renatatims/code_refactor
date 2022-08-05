@@ -93,6 +93,9 @@ The website was also adjusted to smaller screens, using CSS @media rules, which 
 
 
 ## Link to application: 
+https://renatatims.github.io/code_refactor/
+
+Github:
 https://github.com/Renatatims/code_refactor
 
 ## Sources:
